@@ -1,6 +1,8 @@
+import 'clam.css';
+import { marked } from 'marked';
 // app.js
 // This will read and write to the backend server's JSON database.
-const URL = 'http://localhost:5000/'
+const url = 'http://localhost:5000/'
 const routes = [ 'posts', 'comments', 'profile' ];
 const search = (text) => `?q=${text}`;
 const getPost = (route, id) => `${url}${route}/${id}`;
